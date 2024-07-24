@@ -1,0 +1,47 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#filter {
+	padding: 10px;
+	margin-right: 10px;
+	width: 200px;
+}
+
+button {
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	background: #fff;
+	margin-bottom: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

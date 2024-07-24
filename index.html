@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-  <head>
-    <title>Werkstuk</title>
-    <link href="assets/reset.css" rel="stylesheet" />
-    <link href="assets/style.css" rel="stylesheet" />
-    <script type="module" src="./js/index.js" defer></script>
-  </head>
-  <body>
-    
-  </body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trivia Questions</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>QUIZ Questions</h1>
+			<div class="controls">
+				<input type="text" id="filter" placeholder="Filter by category" />
+				<button id="sort-button">Sort by Difficulty</button>
+			</div>
+			<ul id="questions-list"></ul>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
-
