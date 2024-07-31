@@ -1,20 +1,29 @@
 <!DOCTYPE html>
+<!-- Bjorn Van Craenenbroeck -->
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Trivia Questions</title>
-		<link rel="stylesheet" href="styles.css" />
+		<title>Pokemon Dashboard</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div class="container">
-			<h1>QUIZ Questions</h1>
+			<h1>Pokemon Dashboard</h1>
 			<div class="controls">
-				<input type="text" id="filter" placeholder="Filter by category" />
-				<button id="sort-button">Sort by Difficulty</button>
+				<select id="typeFilter">
+					<option value="">Alle Types</option>
+				</select>
+				<select id="sortOptions">
+					<option value="asc">Sorteer A-Z</option>
+					<option value="desc">Sorteer Z-A</option>
+				</select>
 			</div>
-			<ul id="questions-list"></ul>
+			<div id="pokemonList"></div>
+			<canvas id="pokemonChart"></canvas>
 		</div>
-		<script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="js/pokemonApp.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
